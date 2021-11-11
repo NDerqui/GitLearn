@@ -1,4 +1,4 @@
-# test
+# Learning Git and GitHub
 
 #Example code
 x <- 1
