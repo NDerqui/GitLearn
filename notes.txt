@@ -1,1 +1,31 @@
-Contents
+###START
+git --version #Check git version
+
+###CONFIGURATION
+git config #Open configuration
+git config --global user.name “NDerqui” #Change username in global configuration
+git config --global user.email “n.derqui-fernandez@imperial.ac.uk” #Change email
+git config --list #List details
+
+###CHANGE DIRECTORY AND CLONE REPOSITORY
+cd Documents #Change directory searching got file/location in the current
+cd ~/Documents #Same as above. ~ considers everything in the top line up to “~”.
+git clone https://github.com/NDerqui/GitLearn.git
+ls #List everything in the directory
+cd ~/repository_location_name #Open the repository, observe (main) at the end
+
+###STATUS AND UPDATE
+git status #Status (you need to be in the (main) git repository)
+
+###CREATE FILES: FROM LOCAL TO MAIN BRANCH
+echo “Content goes here” >> name_of_document.txt #Create a .txt file
+git status
+git add notes.txt # Adds file from working directory to Git staging area
+git rm notes.txt # Same as above but removing the file instead of adding
+git commit -m “A commit note” # Commits (puts the action in commit history) change
+git push origin main #Pushing from local server to main branch (GitHub)
+
+###CREATE FILES: FROM MAIN TO LOCAL
+#Create a file in the main repository
+#Open the local file for the repository
+git pull --all #Pulls all changes from main repository (GitHub) to local 
