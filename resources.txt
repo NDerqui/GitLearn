@@ -1,2 +1,14 @@
+
 This was a nice resource for a tutorial:
+
 https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
+
+Sections:
+#1. Learn Git
+#2. Beginner
+#3. Getting started
+#4. Collaborating
+#5. Migrating to Git
+
+Done:
+#3. Getting started (installation)
