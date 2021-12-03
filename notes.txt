@@ -29,3 +29,8 @@ git push origin main #Pushing from local server to main branch (GitHub)
 #Create a file in the main repository
 #Open the local file for the repository
 git pull --all #Pulls all changes from main repository (GitHub) to local 
+
+###CREATE ARCHIVES
+git archive --format=tar HEAD # This will list all the info in the repo
+git archive --output=./example_repo_archive.tar --format=tar HEAD # Create a folder with tar extension
+#Other extensions may be used: zip or tar.gz
