@@ -7,6 +7,10 @@ git config --global user.name “NDerqui” #Change username in global configura
 git config --global user.email “n.derqui-fernandez@imperial.ac.uk” #Change email
 git config --list #List details
 
+###CREATE REPOSITORY
+git init Repo_name_here # This will create a new repository
+###If we do not specify a name it will reinitialise everything  in that repository
+
 ###CHANGE DIRECTORY AND CLONE REPOSITORY
 cd Documents #Change directory searching got file/location in the current
 cd ~/Documents #Same as above. ~ considers everything in the top line up to “~”.
@@ -29,8 +33,3 @@ git push origin main #Pushing from local server to main branch (GitHub)
 #Create a file in the main repository
 #Open the local file for the repository
 git pull --all #Pulls all changes from main repository (GitHub) to local 
-
-###CREATE ARCHIVES
-git archive --format=tar HEAD # This will list all the info in the repo
-git archive --output=./example_repo_archive.tar --format=tar HEAD # Create a folder with tar extension
-# Other extensions may be used: zip or tar.gz
