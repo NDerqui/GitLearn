@@ -33,3 +33,20 @@ git push origin main #Pushing from local server to main branch (GitHub)
 #Create a file in the main repository
 #Open the local file for the repository
 git pull --all #Pulls all changes from main repository (GitHub) to local 
+
+###Sinchronise with GitHub
+#Create a new repository on GitHub.com.
+#Change the current working directory to your local project.
+#Initialize the local directory as a Git repository.
+git init -b main
+#Add the files in your new local repository. This stages them for the first commit.
+git add .
+#Commit the files that you've staged in your local repository.
+git commit -m "First commit"
+#Copy remote repository URL field
+git remote add origin  <REMOTE_URL> 
+#Sets the new remote
+git remote -v
+#Verifies the new remote URL
+#Push the changes in your local repository to GitHub.com.
+git push origin main
