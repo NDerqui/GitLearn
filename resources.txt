@@ -1,4 +1,6 @@
 
+## GENERAL ##
+
 This was a nice resource for a tutorial:
 
 https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
@@ -12,3 +14,14 @@ Sections:
 
 Done:
 #3. Getting started (installation)
+
+
+## CLI AND GITHUB ##
+
+# Installing CLI
+
+https://github.com/cli/cli#installation
+
+# CLI GitHub manual
+
+https://cli.github.com/manual/

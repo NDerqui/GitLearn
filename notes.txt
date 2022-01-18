@@ -7,9 +7,11 @@ git config --global user.name “NDerqui” #Change username in global configura
 git config --global user.email “n.derqui-fernandez@imperial.ac.uk” #Change email
 git config --list #List details
 
-###CREATE REPOSITORY
-git init Repo_name_here # This will create a new repository
-###If we do not specify a name it will reinitialise everything  in that repository
+
+#### CREATING REPO ON GITHUB AND CLONING ####
+
+###CREATE REPO ON GITHUB
+# Create a repo on GitHub
 
 ###CHANGE DIRECTORY AND CLONE REPOSITORY
 cd Documents #Change directory searching got file/location in the current
@@ -32,21 +34,33 @@ git push origin main #Pushing from local server to main branch (GitHub)
 ###CREATE FILES: FROM MAIN TO LOCAL
 #Create a file in the main repository
 #Open the local file for the repository
-git pull --all #Pulls all changes from main repository (GitHub) to local 
+git pull --all #Pulls all changes from main repository (GitHub) to local
 
-###Sinchronise with GitHub
-#Create a new repository on GitHub.com.
-#Change the current working directory to your local project.
-#Initialize the local directory as a Git repository.
-git init -b main
-#Add the files in your new local repository. This stages them for the first commit.
+
+#### CREATE LOCAL REPO AND LOADING TO GITHUB ####
+
+###CREATE REPOSITORY
+cd ~/Documents # Find the directory where you want the repo
+git init Repo_name_here # This will create a new repository
+###If we do not specify a name it will reinitialise everything  in that repository
+git init -b main # This will also create the new repository
+###But will specifically name the branch main
+
+###UPLOAD TO GITHUB
 git add .
-#Commit the files that you've staged in your local repository.
-git commit -m "First commit"
-#Copy remote repository URL field
-git remote add origin  <REMOTE_URL> 
-#Sets the new remote
-git remote -v
-#Verifies the new remote URL
-#Push the changes in your local repository to GitHub.com.
-git push origin main
+git commit -m "initial commit" # Add and commit the files that you've staged in your local repository.
+###Important that on git status we do not see any pending
+gh repo create
+winpty gh repo create # Create the GitHub repo
+###Follow commands
+	# Push existing local repo
+	# Path can be left as "."
+	# Name the repo (better to give the same name)
+	# Public visibility
+	# Add a remote --> Yes
+	# Push everything --> Yes
+
+###IMPORTANT
+# All this requires that CLI is installed. Check resources for this.
+# When CLI is installed, re-starts GitBash.
+# There might be a problem using directly "gh" commands. Start with "winpty" before to solve.
